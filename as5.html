@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>ASSIGNMENT</title>
+        <h2>JS PROGRAM TO DISPLAY THE DIFFERENCE BETWEEN LET,CONST,VAR KEYWORD</h2>
+        <script>
+            //var lets you define global variables which can be used anywhere in the code
+            // var variable can be redeclared and updated
+            var name="ARUSHI"
+            var age=20;
+            var a;
+            console.log(a);
+            var age=19; //var variable can be redeclared and updated
+            console.log(age);
+
+            //let keyword is used to declare local variable which have scope limited inside the block ,it is defined in,only
+            //let variables can be updated but not redeclared
+            {
+                let name="anita"
+                name="Rahul" //let variable can be updated
+                console.log(name); //output will be Rahul
+            }
+            console.log(name); //output:ARUSHI as it is outside the let block ,it will give the output of "var name"
+
+            //const variables cant be reassigned values
+            const country="india"
+            console.log(country)
+            //country="JAPAN" - will generate an error because const variables cant be reassigned values
+        </script>
+       
+    
+    </head>
+    <body>
+
+    </body>
+</html>
